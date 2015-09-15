@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 75px;
+  background-color: #352c2f;
+  border-bottom: 1px solid #8d8d8d;
+}
+
+header .container {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+header .container .logo {
+  width: 64px;
+  height: 74px;
+  background-color: #e23b3a;
+  display: inline-block;
+  float: left;
+}
+
+header .container .logo .logo_letters {
+  font-family: arial, sans-serif;
+  font-size: 25px;
+  width: 50px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  margin-top: 5px;
+}
+
+header .container .logo .logo_letters span:last-child {
+  text-decoration: underline;
+}
+
+header .container .nav {
+  display: inline-block;
+  font-family: arial;
+  font-size: 20px;
+  margin-left: 15%;
+}
+
+header .container .nav li {
+  display: inline-block;
+  float: left;
+  margin-left: 50px;
+  height: 100%;
+  padding: 20px 0 29px 0;
+}
+
+header .container .nav li a {
+  text-decoration: none;
+  color: #8d8d8d;
+  -webkit-transition: all 200ms ease;
+          transition: all 200ms ease;
+  padding: 20px 0 26px 0;
+}
+
+header .container .nav li a:hover {
+  color: white;
+}
+
+header .container .nav li a.active {
+  border-bottom: 7px solid white;
+  color: white;
+}
+
+header .container .language_select {
+  float: right;
+  background-color: #352c2f;
+  color: #8d8d8d;
+  height: 40px;
+  width: 50px;
+  border-right: 1px solid #8d8d8d;
+  overflow: hidden;
+  font-size: 15px;
+  padding-top: 0px;
+  margin-top: 15px;
+  line-height: 35px;
+  font-family: arial;
+}
+
+header .container .search {
+  float: right;
+  color: #8d8d8d;
+  margin: 20px 20px;
+  font-size: 25px;
+}
