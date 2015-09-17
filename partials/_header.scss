@@ -1,94 +1,144 @@
-*{
-	box-sizing: border-box;
+* {
+    box-sizing: border-box;
 }
 
 header {
     width: 100%;
     height: 75px;
-    background-color: $gray;
     border-bottom: 1px solid $font-color;
+    background-color: $gray;
 
-    .container{
-    	width: 80%;
-    	margin: 0 auto;
-    	position: relative;
-    	.logo {
-            width: 64px;
-            height: 74px;
-            background-color: $red;
+    .container {
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+
+        .logo {
             display: inline-block;
             float: left;
+            width: 64px;
+            height: 74px;
+            margin-left: 10%;
+            background-color: $red;
 
-
-    
             .logo_letters {
-                font-family: arial, sans-serif;
-                font-size: 25px;
+                font-family: 'Teko', sans-serif;
+                font-size: 30px;
+                line-height: 22px;
+                position: relative;
                 width: 50px;
                 margin: 0 auto;
+                margin-top: 5px;
+                padding-top: 7px;
                 text-align: center;
                 color: white;
-                margin-top: 5px;
-                
-                span:last-child{
-                	text-decoration: underline;
+
+                &:after {
+                    position: absolute;
+                    bottom: -2px;
+                    left: 14px;
+                    width: 23px;
+                    height: 3px;
+                    content: '';
+                    background-color: white;
                 }
             }
         }
 
-        .nav{
-        	display: inline-block;
-        	font-family: arial;
-        	font-size: 20px;
-        	margin-left: 15%;
+        .nav {
+            font-family: 'Dosis', sans-serif;
+            font-size: 15px;
+            display: inline-block;
+            margin-left: 10%;
 
-        	li{
-        		display: inline-block;
-        		float: left;
-        		margin-left: 50px;
-        		height: 100%;
-        		padding: 20px 0 29px 0;
-        		
+            li {
+                display: inline-block;
+                float: left;
+                height: 100%;
+                margin-left: 50px;
+                padding: 25px 0 29px 0;
 
-        		a{
-        			text-decoration: none;
-        			color: $font-color;
-        			transition: all 200ms ease;
-        			padding: 20px 0 26px 0;
+                a {
+                    padding: 20px 0 26px 0;
+                    transition: all 200ms ease;
+                    text-decoration: none;
+                    color: $font-color;
 
-        			&:hover{
-        				color: white;
-        			}
+                    &:hover {
+                        color: white;
+                    }
 
-        			&.active{
-        				border-bottom: 7px solid white;
-        				color: white;
-        			}
-        		}
-        	}
+                    &.active {
+                        color: white;
+                        border-bottom: 5px solid white;
+                    }
+                }
+            }
         }
 
-        .language_select{
-        	float: right;
-        	background-color: $gray;
-        	color: $font-color;
-        	height: 40px;
-        	width: 50px;
-        	border-right: 1px solid $font-color;
-        	overflow: hidden;
-        	font-size: 15px;
-        	padding-top: 0px;
-        	margin-top: 15px;
-        	line-height: 35px;
-        	font-family: arial;
+        .language_select {
+            font-family: 'Dosis', sans-serif;
+            font-size: 15px;
+            line-height: 35px;
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            right: 15%;
+            float: right;
+            overflow: hidden;
+            width: 60px;
+            height: 40px;
+            margin-top: 15px;
+            padding-top: 0;
+            padding-left: 10px;
+            transition: all 300ms ease;
+            color: $font-color;
+            border-right: 1px solid $font-color;
+            background-color: $gray;
 
+            &:hover {
+                height: 210px;
+                border: 1px solid $font-color;
+            }
+
+            &:hover .arrow {
+                transform: rotate(-190deg);
+            }
+
+            a {
+                transition: all 300ms ease;
+                text-decoration: none;
+                color: $font-color;
+
+                &:hover {
+                    color: white;
+                }
+            }
+
+            .arrow {
+                position: absolute;
+                top: 16px;
+                right: 11px;
+                width: 0;
+                height: 0;
+                transition: all 300ms ease;
+                border-top: 5px solid $font-color;
+                border-right: 5px solid transparent;
+                border-left: 5px solid transparent;
+            }
         }
 
-        .search{
-        	float: right;
-        	color: $font-color;
-        	margin: 20px 20px;
-        	font-size: 25px;
+        .search {
+            font-size: 25px;
+            float: right;
+            margin: 20px 10% 20px 20px;
+            transition: all 200ms ease;
+            color: $font-color;
+
+            &:hover {
+                cursor: pointer;
+                color: white;
+            }
         }
     }
 }
