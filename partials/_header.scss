@@ -7,6 +7,8 @@ header {
     height: 75px;
     border-bottom: 1px solid $font-color;
     background-color: $gray;
+    position: fixed;
+    z-index: 3;
 
     .container {
         position: relative;
@@ -45,11 +47,18 @@ header {
             }
         }
 
+        .nav_container{
+            position: relative;
+            float: right;
+            left: -50%;
+        }
+
         .nav {
             font-family: 'Dosis', sans-serif;
             font-size: 15px;
             display: inline-block;
-            margin-left: 10%;
+            position: relative;
+            left: 50%;
 
             li {
                 display: inline-block;
@@ -84,7 +93,6 @@ header {
             z-index: 2;
             top: 0;
             right: 15%;
-            float: right;
             overflow: hidden;
             width: 60px;
             height: 40px;
@@ -96,14 +104,11 @@ header {
             border-right: 1px solid $font-color;
             background-color: $gray;
 
-            &:hover {
+            &.active {
                 height: 210px;
                 border: 1px solid $font-color;
             }
 
-            &:hover .arrow {
-                transform: rotate(-190deg);
-            }
 
             a {
                 transition: all 300ms ease;
@@ -125,20 +130,32 @@ header {
                 border-top: 5px solid $font-color;
                 border-right: 5px solid transparent;
                 border-left: 5px solid transparent;
+
+                &.active {
+                transform: rotate(-180deg);
+                }
             }
+
         }
 
         .search {
             font-size: 25px;
-            float: right;
-            margin: 20px 10% 20px 20px;
             transition: all 200ms ease;
             color: $font-color;
+            position: absolute;
+            right: 13%;
+            margin-top: 20px;
 
             &:hover {
                 cursor: pointer;
                 color: white;
             }
+
+            .search_block{
+            position: absolute;
+            z-index: 2;
+            display: none;                          
+           }
         }
     }
 }

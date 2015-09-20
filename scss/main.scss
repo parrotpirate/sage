@@ -4,3 +4,11 @@
 @import "../partials/jumbotron";
 @import "../partials/footer";
 
+*{
+	box-sizing: border-box;
+}
+
+.mission{
+	height: 30vh;
+	width: 100%;
+}

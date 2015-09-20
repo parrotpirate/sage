@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Dosis|Teko:400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+    <script type="text/javascript" src='script/jquery.fancybox.pack.js'></script>
+    <script type="text/javascript" src='script/jquery.fancybox-media.js'></script>
+
+
 </head>
 <body>
 
@@ -17,18 +23,17 @@
                 <p>G E</p>
     		</div>
         </div> <!-- End logo -->
-    	<ul class="nav">
-    		<li><a class="active" href="#">Home</a></li>
-    		<li><a href="#">Projects</a></li>
-    		<li><a href="#">About</a></li>
-    		<li><a href="#">Services</a></li>
-    		<li><a href="#">Blog</a></li>
-    		<li><a href="#">Get in Touch</a></li>
-    	</ul>
 
-        <div class="search">
-            <i class="fa fa-search"></i>
-        </div>
+        <div class="nav_container">
+        	<ul class="nav">
+        		<li><a class="active" href="#">Home</a></li>
+        		<li><a href="#">Projects</a></li>
+        		<li><a href="#">About</a></li>
+        		<li><a href="#">Services</a></li>
+        		<li><a href="#">Blog</a></li>
+        		<li><a href="#">Get in Touch</a></li>
+        	</ul>
+        </div>     
 
         <div class="language_select">
             <ul>
@@ -41,26 +46,46 @@
             </ul>
             <div class="arrow"></div>
         </div> <!-- End language_select -->
+
+        <div class="search">
+            <i class="fa fa-search"></i>
+            <div class="search_block">
+                <form id="search" method="post">
+                    <input id="search_input" name="search_input" type="text" 
+                placeholder="Search">
+                </form>
+            </div>
+        </div> <!--End search-->
+        
     </div>  <!-- End container -->
 
-    <div class="jumbotron">
-        <p class="headline">LET US MAKE YOUR AWESOME IDEA HAPPEN</p>
-        <div class="play_video">
-            <i class="fa fa-play"></i>
-            <span>WATCH SHOWREEL</span>
-        </div> <!-- End play_video -->
+</header> <!--End of header-->
+
+ <div class="jumbotron">
+    <p class="headline">LET US MAKE YOUR AWESOME IDEA HAPPEN</p>
+        <a class="fancybox-media" href="https://www.youtube.com/watch?v=2SDuSRKt8Vk">  
+            <div class="play_video">
+                <i class="fa fa-play"></i>
+                <span>WATCH SHOWREEL</span>            
+            </div> <!-- End play_video -->
+        </a>
         <div class="discover_more">
             <i class="fa fa-caret-square-o-down"></i>
             <p>DISCOVER MORE</p>    
         </div> <!--End discover_more-->
-    </div> <!--End jumbotron-->
+</div> <!--End jumbotron-->
 
-    <div class="mission">
-        
-    </div>
+<div class="mission">
+    <h2>We develop web sites and apps for organisations who want to do something new online.</h2>
+    <a href="#" class="explore_link">
+        <button class="explore_button">
+            <span>explore more</span>            
+        </button>
+    </a>
+</div>
 
-
-</header>
-
+<script type="text/javascript" src="script/script.js"></script>
+<script type="text/javascript" src='script/jquery.fancybox.pack.js'></script>
+<script type="text/javascript" src='script/jquery.fancybox-media.js'></script>
 </body>
 </html>
