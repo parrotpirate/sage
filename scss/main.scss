@@ -2,13 +2,48 @@
 @import "../partials/mixins";
 @import "../partials/header";
 @import "../partials/jumbotron";
+@import "../partials/mission";
 @import "../partials/footer";
 
 *{
 	box-sizing: border-box;
 }
 
-.mission{
-	height: 30vh;
+.sample_projects{
 	width: 100%;
+	height: 100vh;
+	a{
+		text-decoration: none;
+
+		&:hover{
+			cursor: pointer;
+		}
+	}
+
+	.left{
+		float: left;
+		height: 100%;
+		width: 50%;
+		background-color: $red;
+	}
+
+	.right{
+		float: right;
+		height: 50%;
+		width: 50%;
+	}
+
+	.first{
+		@extend .right;
+		background-color: $gray;
+
+		h3{
+			
+		}
+	}
+
+	.second{
+		@extend .right;
+		background-color: $gray2;
+	}
 }
