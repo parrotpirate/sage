@@ -12,8 +12,10 @@
 .sample_projects{
 	width: 100%;
 	height: 100vh;
+	font-family: 'Teko', sans-serif;
 	a{
 		text-decoration: none;
+		color: white;
 
 		&:hover{
 			cursor: pointer;
@@ -31,19 +33,51 @@
 		float: right;
 		height: 50%;
 		width: 50%;
+		padding: 30vh 20vw 1vw 5vw;
 	}
 
 	.first{
 		@extend .right;
 		background-color: $gray;
-
-		h3{
-			
+		.wrapper{
+			h3{
+				color: white;
+				font-size: 4vw;
+				letter-spacing: .3vw;
+				font-weight: 300;
+				text-transform: uppercase;
+				margin-bottom: .75vw;
+			}
+			p{
+				font-size: 1.1vw;
+				font-weight: 300;
+				color: darkgray;
+				opacity: .8;
+				letter-spacing: .1vw;
+			}
 		}
+
 	}
 
 	.second{
 		@extend .right;
 		background-color: $gray2;
+		.wrapper{
+			h3{
+				color: white;
+				font-size: 4vw;
+				letter-spacing: .3vw;
+				font-weight: 300;
+				text-transform: uppercase;
+				margin-bottom: .75vw;
+			}
+			p{
+				font-size: 1.1vw;
+				font-weight: 300;
+				color: darkgray;
+				opacity: .8;
+				letter-spacing: .1vw;
+			}
+		}
 	}
 }
