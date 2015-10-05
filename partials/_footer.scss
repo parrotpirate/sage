@@ -1,0 +1,108 @@
+.footer {
+    width: 100%;
+    height: 40vh;
+
+    .container {
+        position: relative;
+        width: 60%;
+        height: 100%;
+        margin: 0 auto;
+
+        .wrapper {
+            float: left;
+            width: 23%;
+            height: 70%;
+            margin-right: 2%;
+
+            &:nth-child(2) {
+                width: 50%;
+            }
+
+            &:nth-child(3) {
+                margin-right: 0;
+            }
+
+            p {
+                font-family: 'Teko', sans-serif;
+                font-size: 1.5vw;
+                position: relative;
+                padding-top: 3.4vh;
+                letter-spacing: .2vw;
+                text-transform: uppercase;
+
+                &:after {
+                    position: absolute;
+                    bottom: -.7vw;
+                    left: 0;
+                    width: 100%;
+                    height: .3vh;
+                    content: '';
+                    background-color: black;
+                }
+            }
+
+            ul {
+                margin-top: 3.3vh;
+
+                &.middle {
+                    display: inline-block;
+                    float: left;
+                    width: 50%;
+                }
+
+                li {
+                    padding-bottom: 1.4vh;
+
+                    a {
+                        font-family: 'Dosis', sans-serif;
+                        font-size: 1vw;
+                        transition: all 300ms ease-in-out;
+                        text-decoration: none;
+                        text-transform: capitalize;
+                        color: $font-color;
+
+                        &:hover {
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+
+        .copyright {
+            font-family: 'Dosis', sans-serif;
+            font-size: .7vw;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 10%;
+
+            &:before {
+                position: absolute;
+                top: -1vh;
+                width: 100%;
+                height: .1vh;
+                content: '';
+                background-color: $font-color;
+            }
+
+            .left {
+                float: left;
+                margin-top: 1vh;
+                color: $font-color;
+            }
+
+            .right {
+                float: right;
+
+                @extend .left;
+
+                a {
+                    margin-right: 1vw;
+                    text-decoration: none;
+                    color: $font-color;
+                }
+            }
+        }
+    }
+}
