@@ -1,3 +1,7 @@
+.clearfix {
+  clear: both;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -308,7 +312,7 @@ body {
   cursor: pointer;
 }
 
-.sample_projects .left {
+.sample_projects .left, .sample_projects .footer .container .copyright .right, .footer .container .copyright .sample_projects .right, .footer .container .copyright .sample_projects .first, .sample_projects .footer .container .copyright .first, .footer .container .copyright .sample_projects .second, .sample_projects .footer .container .copyright .second {
   position: relative;
   float: left;
   width: 50%;
@@ -316,33 +320,33 @@ body {
   background-color: #e23b3a;
 }
 
-.sample_projects .left span {
+.sample_projects .left span, .sample_projects .footer .container .copyright .right span, .footer .container .copyright .sample_projects .right span, .footer .container .copyright .sample_projects .first span, .sample_projects .footer .container .copyright .first span, .footer .container .copyright .sample_projects .second span, .sample_projects .footer .container .copyright .second span {
   font-size: 2vw;
-  letter-spacing: .2vw;
-  color: darkgray;
-  text-transform: uppercase;
   display: inline-block;
   margin: 50vh 20vw 2vw 4.5vw;
+  letter-spacing: .2vw;
+  text-transform: uppercase;
+  color: darkgray;
 }
 
-.sample_projects .left .window {
-  height: 11vw;
-  width: 23vw;
-  margin-left: 4.5vw;
-  overflow: hidden;
+.sample_projects .left .window, .sample_projects .footer .container .copyright .right .window, .footer .container .copyright .sample_projects .right .window, .footer .container .copyright .sample_projects .first .window, .sample_projects .footer .container .copyright .first .window, .footer .container .copyright .sample_projects .second .window, .sample_projects .footer .container .copyright .second .window {
   position: relative;
+  overflow: hidden;
+  width: 23vw;
+  height: 11vw;
+  margin-left: 4.5vw;
 }
 
-.sample_projects .left .window .featured1, .sample_projects .left .window .featured2 {
+.sample_projects .left .window .featured1, .sample_projects .footer .container .copyright .right .window .featured1, .footer .container .copyright .sample_projects .right .window .featured1, .footer .container .copyright .sample_projects .first .window .featured1, .sample_projects .footer .container .copyright .first .window .featured1, .footer .container .copyright .sample_projects .second .window .featured1, .sample_projects .footer .container .copyright .second .window .featured1, .sample_projects .left .window .featured2, .sample_projects .footer .container .copyright .right .window .featured2, .footer .container .copyright .sample_projects .right .window .featured2, .footer .container .copyright .sample_projects .first .window .featured2, .sample_projects .footer .container .copyright .first .window .featured2, .footer .container .copyright .sample_projects .second .window .featured2, .sample_projects .footer .container .copyright .second .window .featured2 {
   position: absolute;
   left: -100%;
-  height: 100%;
   width: 100%;
+  height: 100%;
   -webkit-transition: all 300ms ease-in-out;
           transition: all 300ms ease-in-out;
 }
 
-.sample_projects .left .window .featured1 h3, .sample_projects .left .window .featured2 h3 {
+.sample_projects .left .window .featured1 h3, .sample_projects .footer .container .copyright .right .window .featured1 h3, .footer .container .copyright .sample_projects .right .window .featured1 h3, .footer .container .copyright .sample_projects .first .window .featured1 h3, .sample_projects .footer .container .copyright .first .window .featured1 h3, .footer .container .copyright .sample_projects .second .window .featured1 h3, .sample_projects .footer .container .copyright .second .window .featured1 h3, .sample_projects .left .window .featured2 h3, .sample_projects .footer .container .copyright .right .window .featured2 h3, .footer .container .copyright .sample_projects .right .window .featured2 h3, .footer .container .copyright .sample_projects .first .window .featured2 h3, .sample_projects .footer .container .copyright .first .window .featured2 h3, .footer .container .copyright .sample_projects .second .window .featured2 h3, .sample_projects .footer .container .copyright .second .window .featured2 h3 {
   font-size: 4vw;
   font-weight: 300;
   margin-bottom: .75vw;
@@ -351,37 +355,37 @@ body {
   color: white;
 }
 
-.sample_projects .left .window .featured1 p, .sample_projects .left .window .featured2 p {
+.sample_projects .left .window .featured1 p, .sample_projects .footer .container .copyright .right .window .featured1 p, .footer .container .copyright .sample_projects .right .window .featured1 p, .footer .container .copyright .sample_projects .first .window .featured1 p, .sample_projects .footer .container .copyright .first .window .featured1 p, .footer .container .copyright .sample_projects .second .window .featured1 p, .sample_projects .footer .container .copyright .second .window .featured1 p, .sample_projects .left .window .featured2 p, .sample_projects .footer .container .copyright .right .window .featured2 p, .footer .container .copyright .sample_projects .right .window .featured2 p, .footer .container .copyright .sample_projects .first .window .featured2 p, .sample_projects .footer .container .copyright .first .window .featured2 p, .footer .container .copyright .sample_projects .second .window .featured2 p, .sample_projects .footer .container .copyright .second .window .featured2 p {
   font-size: 1.1vw;
   font-weight: 300;
   letter-spacing: .1vw;
   color: darkgray;
 }
 
-.sample_projects .left .window .featured1.active, .sample_projects .left .window .active.featured2 {
+.sample_projects .left .window .featured1.active, .sample_projects .footer .container .copyright .right .window .featured1.active, .footer .container .copyright .sample_projects .right .window .featured1.active, .footer .container .copyright .sample_projects .first .window .featured1.active, .sample_projects .footer .container .copyright .first .window .featured1.active, .footer .container .copyright .sample_projects .second .window .featured1.active, .sample_projects .footer .container .copyright .second .window .featured1.active, .sample_projects .left .window .active.featured2, .sample_projects .footer .container .copyright .right .window .active.featured2, .footer .container .copyright .sample_projects .right .window .active.featured2, .footer .container .copyright .sample_projects .first .window .active.featured2, .sample_projects .footer .container .copyright .first .window .active.featured2, .footer .container .copyright .sample_projects .second .window .active.featured2, .sample_projects .footer .container .copyright .second .window .active.featured2 {
   left: 0;
 }
 
-.sample_projects .left .window .featured2 {
+.sample_projects .left .window .featured2, .sample_projects .footer .container .copyright .right .window .featured2, .footer .container .copyright .sample_projects .right .window .featured2, .footer .container .copyright .sample_projects .first .window .featured2, .sample_projects .footer .container .copyright .first .window .featured2, .footer .container .copyright .sample_projects .second .window .featured2, .sample_projects .footer .container .copyright .second .window .featured2 {
   left: 100%;
 }
 
-.sample_projects .left .indicator1, .sample_projects .left .indicator2 {
+.sample_projects .left .indicator1, .sample_projects .footer .container .copyright .right .indicator1, .footer .container .copyright .sample_projects .right .indicator1, .footer .container .copyright .sample_projects .first .indicator1, .sample_projects .footer .container .copyright .first .indicator1, .footer .container .copyright .sample_projects .second .indicator1, .sample_projects .footer .container .copyright .second .indicator1, .sample_projects .left .indicator2, .sample_projects .footer .container .copyright .right .indicator2, .footer .container .copyright .sample_projects .right .indicator2, .footer .container .copyright .sample_projects .first .indicator2, .sample_projects .footer .container .copyright .first .indicator2, .footer .container .copyright .sample_projects .second .indicator2, .sample_projects .footer .container .copyright .second .indicator2 {
   position: absolute;
   bottom: 5vh;
   left: 5vw;
   overflow: hidden;
   width: 3vw;
   height: .3vw;
-  background-color: darkgray;
   opacity: .8;
+  background-color: darkgray;
 }
 
-.sample_projects .left .indicator1:hover, .sample_projects .left .indicator2:hover {
+.sample_projects .left .indicator1:hover, .sample_projects .footer .container .copyright .right .indicator1:hover, .footer .container .copyright .sample_projects .right .indicator1:hover, .footer .container .copyright .sample_projects .first .indicator1:hover, .sample_projects .footer .container .copyright .first .indicator1:hover, .footer .container .copyright .sample_projects .second .indicator1:hover, .sample_projects .footer .container .copyright .second .indicator1:hover, .sample_projects .left .indicator2:hover, .sample_projects .footer .container .copyright .right .indicator2:hover, .footer .container .copyright .sample_projects .right .indicator2:hover, .footer .container .copyright .sample_projects .first .indicator2:hover, .sample_projects .footer .container .copyright .first .indicator2:hover, .footer .container .copyright .sample_projects .second .indicator2:hover, .sample_projects .footer .container .copyright .second .indicator2:hover {
   cursor: pointer;
 }
 
-.sample_projects .left .indicator1:after, .sample_projects .left .indicator2:after {
+.sample_projects .left .indicator1:after, .sample_projects .footer .container .copyright .right .indicator1:after, .footer .container .copyright .sample_projects .right .indicator1:after, .footer .container .copyright .sample_projects .first .indicator1:after, .sample_projects .footer .container .copyright .first .indicator1:after, .footer .container .copyright .sample_projects .second .indicator1:after, .sample_projects .footer .container .copyright .second .indicator1:after, .sample_projects .left .indicator2:after, .sample_projects .footer .container .copyright .right .indicator2:after, .footer .container .copyright .sample_projects .right .indicator2:after, .footer .container .copyright .sample_projects .first .indicator2:after, .sample_projects .footer .container .copyright .first .indicator2:after, .footer .container .copyright .sample_projects .second .indicator2:after, .sample_projects .footer .container .copyright .second .indicator2:after {
   position: absolute;
   left: 100%;
   width: 100%;
@@ -392,19 +396,19 @@ body {
   background-color: white;
 }
 
-.sample_projects .left .indicator2 {
+.sample_projects .left .indicator2, .sample_projects .footer .container .copyright .right .indicator2, .footer .container .copyright .sample_projects .right .indicator2, .footer .container .copyright .sample_projects .first .indicator2, .sample_projects .footer .container .copyright .first .indicator2, .footer .container .copyright .sample_projects .second .indicator2, .sample_projects .footer .container .copyright .second .indicator2 {
   left: 9vw;
 }
 
-.sample_projects .left .indicator2:after {
+.sample_projects .left .indicator2:after, .sample_projects .footer .container .copyright .right .indicator2:after, .footer .container .copyright .sample_projects .right .indicator2:after, .footer .container .copyright .sample_projects .first .indicator2:after, .sample_projects .footer .container .copyright .first .indicator2:after, .footer .container .copyright .sample_projects .second .indicator2:after, .sample_projects .footer .container .copyright .second .indicator2:after {
   left: -100%;
 }
 
-.sample_projects .left .indicator1.active:after, .sample_projects .left .active.indicator2:after {
+.sample_projects .left .indicator1.active:after, .sample_projects .footer .container .copyright .right .indicator1.active:after, .footer .container .copyright .sample_projects .right .indicator1.active:after, .footer .container .copyright .sample_projects .first .indicator1.active:after, .sample_projects .footer .container .copyright .first .indicator1.active:after, .footer .container .copyright .sample_projects .second .indicator1.active:after, .sample_projects .footer .container .copyright .second .indicator1.active:after, .sample_projects .left .active.indicator2:after, .sample_projects .footer .container .copyright .right .active.indicator2:after, .footer .container .copyright .sample_projects .right .active.indicator2:after, .footer .container .copyright .sample_projects .first .active.indicator2:after, .sample_projects .footer .container .copyright .first .active.indicator2:after, .footer .container .copyright .sample_projects .second .active.indicator2:after, .sample_projects .footer .container .copyright .second .active.indicator2:after {
   left: 0;
 }
 
-.sample_projects .left .indicator2.active:after {
+.sample_projects .left .indicator2.active:after, .sample_projects .footer .container .copyright .right .indicator2.active:after, .footer .container .copyright .sample_projects .right .indicator2.active:after, .footer .container .copyright .sample_projects .first .indicator2.active:after, .sample_projects .footer .container .copyright .first .indicator2.active:after, .footer .container .copyright .sample_projects .second .indicator2.active:after, .sample_projects .footer .container .copyright .second .indicator2.active:after {
   left: 0;
 }
 
@@ -458,36 +462,156 @@ body {
 }
 
 .sample_projects .show_more {
-  height: 7%;
   width: 100%;
-  background-color: #352d2f;
+  height: 7%;
   text-align: center;
+  background-color: #352d2f;
 }
 
 .sample_projects .show_more a {
-  height: 100%;
-  width: 12vw;
-  display: inline-block;
-  margin: 0 auto;
   position: relative;
+  display: inline-block;
+  width: 12vw;
+  height: 100%;
+  margin: 0 auto;
   padding-top: 1vw;
+  -webkit-transition: all 300ms ease-in-out;
+          transition: all 300ms ease-in-out;
 }
 
 .sample_projects .show_more a p {
-  text-align: center;
   font-size: 1.5vw;
-  text-transform: uppercase;
-  letter-spacing: .1vw;
   display: inline-block;
+  text-align: center;
+  letter-spacing: .1vw;
+  text-transform: uppercase;
 }
 
 .sample_projects .show_more a p:after {
-  content: '';
-  z-index: 5;
   position: absolute;
-  width: 95.5%;
-  height: 7%;
-  background-color: white;
+  z-index: 5;
   bottom: 1.5vh;
   left: 2%;
+  width: 95.5%;
+  height: 7%;
+  content: '';
+  background-color: white;
+  -webkit-transition: all 300ms ease-in-out;
+          transition: all 300ms ease-in-out;
+}
+
+.sample_projects .show_more a:hover {
+  color: #e23b3a;
+}
+
+.sample_projects .show_more a:hover p:after {
+  background-color: #e23b3a;
+}
+
+.footer {
+  height: 40vh;
+  width: 100%;
+}
+
+.footer .container {
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.footer .container .wrapper {
+  float: left;
+  height: 70%;
+  width: 23%;
+  margin-right: 2%;
+}
+
+.footer .container .wrapper:nth-child(2) {
+  width: 50%;
+}
+
+.footer .container .wrapper:nth-child(3) {
+  margin-right: 0;
+}
+
+.footer .container .wrapper p {
+  font-family: 'Teko', sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  font-size: 1.5vw;
+  padding-top: 3.4vh;
+  letter-spacing: .2vw;
+}
+
+.footer .container .wrapper p:after {
+  content: '';
+  width: 100%;
+  height: .3vh;
+  background-color: black;
+  position: absolute;
+  bottom: -.7vw;
+  left: 0;
+}
+
+.footer .container .wrapper ul {
+  margin-top: 3.3vh;
+}
+
+.footer .container .wrapper ul.middle {
+  display: inline-block;
+  width: 50%;
+  float: left;
+}
+
+.footer .container .wrapper ul li {
+  padding-bottom: 1.4vh;
+}
+
+.footer .container .wrapper ul li a {
+  text-decoration: none;
+  color: #8d8d8d;
+  text-transform: capitalize;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1vw;
+  -webkit-transition: all 300ms ease-in-out;
+          transition: all 300ms ease-in-out;
+}
+
+.footer .container .wrapper ul li a:hover {
+  color: black;
+}
+
+.footer .container .copyright {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  font-family: 'Dosis', sans-serif;
+  font-size: .7vw;
+}
+
+.footer .container .copyright:before {
+  content: '';
+  position: absolute;
+  top: -1vh;
+  height: .1vh;
+  width: 100%;
+  background-color: #8d8d8d;
+}
+
+.footer .container .copyright .left, .footer .container .copyright .right, .footer .container .copyright .sample_projects .first, .sample_projects .footer .container .copyright .first, .footer .container .copyright .sample_projects .second, .sample_projects .footer .container .copyright .second {
+  float: left;
+  margin-top: 1vh;
+  color: #8d8d8d;
+}
+
+.footer .container .copyright .right, .footer .container .copyright .sample_projects .first, .sample_projects .footer .container .copyright .first, .footer .container .copyright .sample_projects .second, .sample_projects .footer .container .copyright .second {
+  float: right;
+}
+
+.footer .container .copyright .right a, .footer .container .copyright .sample_projects .first a, .sample_projects .footer .container .copyright .first a, .footer .container .copyright .sample_projects .second a, .sample_projects .footer .container .copyright .second a {
+  text-decoration: none;
+  color: #8d8d8d;
+  margin-right: 1vw;
 }
