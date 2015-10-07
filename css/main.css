@@ -513,46 +513,46 @@ body {
 }
 
 .features {
-  height: 70vh;
   width: 100%;
+  height: 70vh;
 }
 
 .features .container {
-  height: 100%;
   width: 60%;
+  height: 100%;
   margin: 0 auto;
 }
 
 .features .container .left, .features .container .right, .features .container .sample_projects .first, .sample_projects .features .container .first, .features .container .sample_projects .second, .sample_projects .features .container .second, .features .footer .container .copyright .right, .footer .features .container .copyright .right, .features .sample_projects .footer .container .copyright .first, .features .sample_projects .footer .container .copyright .second {
-  width: 50%;
   float: left;
+  width: 50%;
   height: 50%;
   padding-top: 5vh;
 }
 
 .features .container .left i, .features .container .right i, .features .container .sample_projects .first i, .sample_projects .features .container .first i, .features .container .sample_projects .second i, .sample_projects .features .container .second i, .features .footer .container .copyright .right i, .footer .features .container .copyright .right i, .features .sample_projects .footer .container .copyright .first i, .features .sample_projects .footer .container .copyright .second i {
-  color: #e23b3a;
   font-size: 2.5vw;
+  margin-bottom: 1vw;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-  margin-bottom: 1vw;
+  color: #e23b3a;
 }
 
 .features .container .left h3, .features .container .right h3, .features .container .sample_projects .first h3, .sample_projects .features .container .first h3, .features .container .sample_projects .second h3, .sample_projects .features .container .second h3, .features .footer .container .copyright .right h3, .footer .features .container .copyright .right h3, .features .sample_projects .footer .container .copyright .first h3, .features .sample_projects .footer .container .copyright .second h3 {
-  font-family: "Teko", sans-serif;
+  font-family: 'Teko', sans-serif;
   font-size: 1.5vw;
   font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: .15vw;
   width: 15vw;
   margin-bottom: 1vw;
+  letter-spacing: .15vw;
+  text-transform: uppercase;
 }
 
 .features .container .left p, .features .container .right p, .features .container .sample_projects .first p, .sample_projects .features .container .first p, .features .container .sample_projects .second p, .sample_projects .features .container .second p, .features .footer .container .copyright .right p, .footer .features .container .copyright .right p, .features .sample_projects .footer .container .copyright .first p, .features .sample_projects .footer .container .copyright .second p {
-  color: #8d8d8d;
-  width: 25vw;
-  font-size: .9vw;
   font-family: 'Dosis', sans-serif;
+  font-size: .9vw;
+  width: 25vw;
+  color: #8d8d8d;
 }
 
 .features .container .right, .features .container .sample_projects .first, .sample_projects .features .container .first, .features .container .sample_projects .second, .sample_projects .features .container .second {
@@ -564,34 +564,34 @@ body {
 }
 
 .features .container .bottom {
-  height: 50%;
   width: 100%;
+  height: 50%;
 }
 
 .features .container .bottom .connected h3 {
-  font-family: "Teko", sans-serif;
+  font-family: 'Teko', sans-serif;
   font-size: 2.2vw;
   font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: .1vw;
   margin-bottom: 1vw;
+  letter-spacing: .1vw;
+  text-transform: uppercase;
 }
 
 .features .container .bottom .connected p {
-  color: #8d8d8d;
-  font-size: .9vw;
   font-family: 'Dosis', sans-serif;
+  font-size: .9vw;
   margin-bottom: 3vw;
+  color: #8d8d8d;
 }
 
 .features .container .bottom .social {
-  background-color: #30282A;
   float: left;
   width: 22.4%;
   height: 50%;
   margin-right: 3.4%;
   -webkit-transition: background-color 0.3s ease;
           transition: background-color 0.3s ease;
+  background-color: #30282A;
 }
 
 .features .container .bottom .social:hover {
@@ -599,10 +599,10 @@ body {
 }
 
 .features .container .bottom .social:hover .wrapper {
-  color: #30282A;
   -webkit-transform: scale(1.7) translateY(-30%);
       -ms-transform: scale(1.7) translateY(-30%);
           transform: scale(1.7) translateY(-30%);
+  color: #30282A;
 }
 
 .features .container .bottom .social.last {
@@ -610,25 +610,25 @@ body {
 }
 
 .features .container .bottom .social a {
-  height: 100%;
-  width: 100%;
   display: inline-block;
+  width: 100%;
+  height: 100%;
   text-decoration: none;
 }
 
 .features .container .bottom .social a .wrapper {
-  height: 50%;
-  width: 50%;
-  margin: 0 auto;
   position: relative;
   top: 50%;
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  color: white;
   text-align: center;
-  -webkit-transition: all 0.3s ease;
-          transition: all 0.3s ease;
+  color: white;
 }
 
 .features .container .bottom .social a .wrapper i {
@@ -637,11 +637,70 @@ body {
 }
 
 .features .container .bottom .social a .wrapper p {
-  text-transform: uppercase;
   font-family: 'Teko', sans-serif;
+  font-size: 1.5vw;
   font-weight: 300;
   letter-spacing: .2vw;
+  text-transform: uppercase;
+}
+
+.contact {
+  width: 100%;
+  height: 60vh;
+  background-color: #30282A;
+}
+
+.contact .block {
+  position: relative;
+  top: 50%;
+  width: 35%;
+  height: 50%;
+  margin: 0 auto;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #e23b3a;
+}
+
+.contact .block .wrapper {
+  font-family: 'Teko', sans-serif;
+  font-weight: 300;
+  position: relative;
+  top: 50%;
+  margin: 0 auto;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.contact .block .wrapper i {
+  font-size: 4vh;
+  margin-bottom: 1.5vh;
+  color: #e23b3a;
+  text-shadow: -0.1vw -0.1vh 0 #fff, 0.1vw -0.1vh 0 #fff, -0.1vw 0.1vh 0 #fff, 0.1vw 0.1vh 0 #fff;
+}
+
+.contact .block .wrapper p:nth-child(2),
+.contact .block .wrapper p:nth-child(3) {
+  font-size: 1vw;
+  letter-spacing: .08vw;
+}
+
+.contact .block .wrapper p:nth-child(3) {
+  margin-bottom: 1.5vh;
+}
+
+.contact .block .wrapper p:nth-child(4),
+.contact .block .wrapper p:nth-child(5) {
   font-size: 1.5vw;
+  letter-spacing: .2vw;
+}
+
+.contact .block .wrapper p:nth-child(4) {
+  margin-bottom: 2vh;
 }
 
 .footer {
