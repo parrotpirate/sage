@@ -1,0 +1,305 @@
+.clearfix {
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: 75px;
+  border-bottom: 1px solid #8d8d8d;
+  background-color: #30282A;
+}
+
+header .container {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+header .container .logo {
+  display: inline-block;
+  float: left;
+  width: 64px;
+  height: 74px;
+  margin-left: 10%;
+  background-color: #e23b3a;
+}
+
+header .container .logo .logo_letters {
+  font-family: 'Teko', sans-serif;
+  font-size: 30px;
+  line-height: 22px;
+  position: relative;
+  width: 50px;
+  margin: 0 auto;
+  margin-top: 5px;
+  padding-top: 7px;
+  text-align: center;
+  color: white;
+}
+
+header .container .logo .logo_letters:after {
+  position: absolute;
+  bottom: -2px;
+  left: 14px;
+  width: 23px;
+  height: 3px;
+  content: '';
+  background-color: white;
+}
+
+header .container .nav_container {
+  position: relative;
+  left: -50%;
+  float: right;
+}
+
+header .container .nav {
+  font-family: 'Dosis', sans-serif;
+  font-size: 15px;
+  position: relative;
+  left: 50%;
+  display: inline-block;
+}
+
+header .container .nav li {
+  display: inline-block;
+  float: left;
+  height: 100%;
+  margin-left: 50px;
+  padding: 25px 0 29px 0;
+}
+
+header .container .nav li a {
+  padding: 20px 0 26px 0;
+  -webkit-transition: all 200ms ease;
+          transition: all 200ms ease;
+  text-decoration: none;
+  color: #8d8d8d;
+}
+
+header .container .nav li a:hover {
+  color: white;
+}
+
+header .container .nav li a.active {
+  color: white;
+  border-bottom: 5px solid white;
+}
+
+header .container .language_select {
+  font-family: 'Dosis', sans-serif;
+  font-size: 15px;
+  line-height: 35px;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 15%;
+  overflow: hidden;
+  width: 60px;
+  height: 40px;
+  margin-top: 15px;
+  padding-top: 0;
+  padding-left: 10px;
+  -webkit-transition: all 300ms ease;
+          transition: all 300ms ease;
+  color: #8d8d8d;
+  border-right: 1px solid #8d8d8d;
+  background-color: #30282A;
+}
+
+header .container .language_select.active {
+  height: 210px;
+  border: 1px solid #8d8d8d;
+}
+
+header .container .language_select a {
+  -webkit-transition: all 300ms ease;
+          transition: all 300ms ease;
+  text-decoration: none;
+  color: #8d8d8d;
+}
+
+header .container .language_select a:hover {
+  color: white;
+}
+
+header .container .language_select .arrow {
+  position: absolute;
+  top: 16px;
+  right: 11px;
+  width: 0;
+  height: 0;
+  -webkit-transition: all 300ms ease;
+          transition: all 300ms ease;
+  border-top: 5px solid #8d8d8d;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+
+header .container .language_select .arrow.active {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+header .container .search {
+  font-size: 25px;
+  position: absolute;
+  right: 13%;
+  margin-top: 20px;
+  -webkit-transition: all 200ms ease;
+          transition: all 200ms ease;
+  color: #8d8d8d;
+}
+
+header .container .search:hover {
+  cursor: pointer;
+  color: white;
+}
+
+header .container .search .search_block {
+  position: absolute;
+  z-index: 2;
+  display: none;
+}
+
+.headline {
+  width: 100%;
+  height: 50vh;
+  background-color: #30282A;
+}
+
+.headline .container {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.headline .container h1 {
+  font-family: "Teko", sans-serif;
+  color: white;
+  font-size: 5.5vw;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1vw;
+  line-height: 13vh;
+}
+
+footer {
+  width: 100%;
+  height: 40vh;
+}
+
+footer .container {
+  position: relative;
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+footer .container .wrapper {
+  float: left;
+  width: 23%;
+  height: 70%;
+  margin-right: 2%;
+}
+
+footer .container .wrapper:nth-child(2) {
+  width: 50%;
+}
+
+footer .container .wrapper:nth-child(3) {
+  margin-right: 0;
+}
+
+footer .container .wrapper p {
+  font-family: 'Teko', sans-serif;
+  font-size: 1.5vw;
+  position: relative;
+  padding-top: 3.4vh;
+  letter-spacing: .2vw;
+  text-transform: uppercase;
+}
+
+footer .container .wrapper p:after {
+  position: absolute;
+  bottom: -.7vw;
+  left: 0;
+  width: 100%;
+  height: .3vh;
+  content: '';
+  background-color: black;
+}
+
+footer .container .wrapper ul {
+  margin-top: 3.3vh;
+}
+
+footer .container .wrapper ul.middle {
+  display: inline-block;
+  float: left;
+  width: 50%;
+}
+
+footer .container .wrapper ul li {
+  padding-bottom: 1.4vh;
+}
+
+footer .container .wrapper ul li a {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1vw;
+  -webkit-transition: all 300ms ease-in-out;
+          transition: all 300ms ease-in-out;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #8d8d8d;
+}
+
+footer .container .wrapper ul li a:hover {
+  color: black;
+}
+
+footer .container .copyright {
+  font-family: 'Dosis', sans-serif;
+  font-size: .7vw;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+}
+
+footer .container .copyright:before {
+  position: absolute;
+  top: -1vh;
+  width: 100%;
+  height: .1vh;
+  content: '';
+  background-color: #8d8d8d;
+}
+
+footer .container .copyright .left, footer .container .copyright .right {
+  float: left;
+  margin-top: 1vh;
+  color: #8d8d8d;
+}
+
+footer .container .copyright .right {
+  float: right;
+}
+
+footer .container .copyright .right a {
+  margin-right: 1vw;
+  text-decoration: none;
+  color: #8d8d8d;
+}
