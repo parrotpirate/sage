@@ -1,0 +1,1 @@
+Construction of functioning web site from a .psd mockup.  All fonts/images/icons were self chosen and sourced.  Functionality and animations were designed self designed.  Incorporated some basic responsive design principals.
