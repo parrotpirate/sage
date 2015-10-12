@@ -56,6 +56,9 @@ jQuery(document).ready(function($) {
         $('.featured2').addClass('active');
         $('.featured1').removeClass('active');
     });
+    //End project slider
+    
+   
 
 
 

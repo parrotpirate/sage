@@ -172,28 +172,200 @@ header .container .search .search_block {
 .headline {
   width: 100%;
   height: 50vh;
+  margin-top: 1px;
   background-color: #30282A;
 }
 
 .headline .container {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 50%;
-  margin: 0 auto;
-  text-align: center;
 }
 
 .headline .container h1 {
   font-family: "Teko", sans-serif;
-  color: white;
   font-size: 5.5vw;
-  text-transform: uppercase;
   font-weight: 300;
-  letter-spacing: 1vw;
   line-height: 13vh;
+  letter-spacing: 1vw;
+  text-transform: uppercase;
+  color: white;
+}
+
+.project_select {
+  width: 100%;
+  height: 70vh;
+}
+
+.project_select > div {
+  float: left;
+  width: 33.3%;
+  height: 100%;
+}
+
+.project_select .left .wrapper, .project_select .right .wrapper, .project_select footer .container .copyright .right .wrapper, footer .container .copyright .project_select .right .wrapper {
+  font-family: "Teko", sans-serif;
+  font-size: 1.3vw;
+  font-weight: 300;
+  display: inline-block;
+  margin-top: 10%;
+  margin-left: 15vw;
+  cursor: pointer;
+  text-align: left;
+  letter-spacing: .1vw;
+  text-transform: uppercase;
+}
+
+.project_select .left .wrapper p:first-child, .project_select .right .wrapper p:first-child {
+  color: #e23b3a;
+}
+
+.project_select .right .wrapper {
+  float: right;
+  margin-right: 15vw;
+  text-align: right;
+}
+
+.project_select .center {
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+}
+
+.project_select .center .connecto, .project_select .center .american_university, .project_select .center .curiosity {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.project_select .center .connecto .wrapper, .project_select .center .american_university .wrapper, .project_select .center .curiosity .wrapper {
+  font-size: 1.3vw;
+  line-height: 0;
+  margin-top: 3vh;
+  margin-bottom: 1vw;
+  color: #e23b3a;
+}
+
+.project_select .center .connecto .name, .project_select .center .american_university .name, .project_select .center .curiosity .name {
+  font-family: "Teko", sans-serif;
+  font-size: 2.4vw;
+  margin-bottom: 9vh;
+  letter-spacing: .2vw;
+  text-transform: uppercase;
+}
+
+.project_select .center .connecto .tagline, .project_select .center .american_university .tagline, .project_select .center .curiosity .tagline {
+  font-family: "Teko", sans-serif;
+  font-size: 2.4vw;
+  font-weight: 300;
+  line-height: 3vw;
+  margin-bottom: 2vh;
+  letter-spacing: .15vw;
+  text-transform: uppercase;
+}
+
+.project_select .center .connecto .summary, .project_select .center .american_university .summary, .project_select .center .curiosity .summary {
+  font-family: "Dosis", sans-serif;
+  font-size: 1.15vw;
+  line-height: 1.2vw;
+  position: relative;
+  margin-bottom: 3vh;
+  padding-bottom: 10%;
+}
+
+.project_select .center .connecto .summary:after, .project_select .center .american_university .summary:after, .project_select .center .curiosity .summary:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: .4vw;
+  content: '';
+  background-color: black;
+}
+
+.project_select .center .connecto .year, .project_select .center .american_university .year, .project_select .center .curiosity .year, .project_select .center .connecto .client, .project_select .center .american_university .client, .project_select .center .curiosity .client, .project_select .center .connecto .tags, .project_select .center .american_university .tags, .project_select .center .curiosity .tags {
+  font-family: "Teko", sans-serif;
+  font-size: 1.4vw;
+  font-weight: 300;
+  margin-bottom: 1vh;
+  letter-spacing: .1vw;
+  text-transform: uppercase;
+}
+
+.project_select .center .american_university, .project_select .center .project_display .curiosity, .project_display .project_select .center .curiosity {
+  display: none;
+}
+
+.project_select .center .american_university i, .project_select .center .project_display .curiosity i, .project_display .project_select .center .curiosity i {
+  font-size: 2vw;
+}
+
+.project_select .center .curiosity {
+  display: none;
+}
+
+.project_select .center .curiosity i {
+  font-size: 2vw;
+}
+
+.project_display {
+  position: relative;
+}
+
+.project_display .american_university, .project_display .curiosity {
+  display: none;
+  width: 100%;
+  height: 90vh;
+  background-color: #30282A;
+  font-size: 2vw;
+  font-family: "Teko", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1vw;
+  color: white;
+  text-align: center;
+  line-height: 7vh;
+}
+
+.project_display .american_university .wrapper, .project_display .curiosity .wrapper {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.project_display .connecto .top, .project_display .project_select .center .american_university .top, .project_select .center .project_display .american_university .top, .project_display .project_select .center .curiosity .top, .project_select .center .project_display .curiosity .top {
+  width: 100%;
+  height: 90vh;
+  background-color: #30282A;
+}
+
+.project_display .connecto .left, .project_display .project_select .center .american_university .left, .project_select .center .project_display .american_university .left, .project_display .project_select .center .curiosity .left, .project_select .center .project_display .curiosity .left, .project_display .connecto .project_select .right, .project_select .project_display .connecto .right, .project_display .project_select .center .american_university .right, .project_select .center .project_display .american_university .right, .project_display .project_select .center .curiosity .right, .project_select .center .project_display .curiosity .right, .project_display .connecto footer .container .copyright .right, footer .container .copyright .project_display .connecto .right {
+  width: 50%;
+  height: 50vh;
+  background-color: #4B3F43;
+  float: left;
+}
+
+.project_display .connecto .right, .project_display .project_select .center .american_university .right, .project_select .center .project_display .american_university .right, .project_display .project_select .center .curiosity .right, .project_select .center .project_display .curiosity .right {
+  width: 50%;
+  height: 25vh;
+  background-color: #352d2f;
+  float: right;
+}
+
+.project_display .connecto .right:last-child, .project_display .project_select .center .american_university .right:last-child, .project_select .center .project_display .american_university .right:last-child, .project_display .project_select .center .curiosity .right:last-child, .project_select .center .project_display .curiosity .right:last-child {
+  background-color: #30282A;
+}
+
+.project_display .curiosity {
+  display: none;
 }
 
 footer {

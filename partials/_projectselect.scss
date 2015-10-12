@@ -1,0 +1,130 @@
+.project_select {
+    width: 100%;
+    height: 70vh;
+
+    & > div {
+        float: left;
+        width: 33.3%;
+        height: 100%;
+    }
+
+    .left {
+        .wrapper {
+            font-family: $font1;
+            font-size: 1.3vw;
+            font-weight: 300;
+            display: inline-block;
+            margin-top: 10%;
+            margin-left: 15vw;
+            cursor: pointer;
+            text-align: left;
+            letter-spacing: .1vw;
+            text-transform: uppercase;
+
+            p:first-child {
+                color: $red;
+            }
+        }
+    }
+
+    .right {
+        @extend .left;
+
+        .wrapper {
+            float: right;
+            margin-right: 15vw;
+            text-align: right;
+        }
+    }
+
+    .center {
+        text-align: center;
+        overflow-x: hidden;
+        overflow-y: auto;
+        position: relative;
+
+        .connecto{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+
+            .wrapper {
+                font-size: 1.3vw;
+                line-height: 0;
+                margin-top: 3vh;
+                margin-bottom: 1vw;
+                color: $red;
+            }
+
+            .name {
+                font-family: $font1;
+                font-size: 2.4vw;
+                margin-bottom: 9vh;
+                letter-spacing: .2vw;
+                text-transform: uppercase;
+            }
+
+            .tagline {
+                font-family: $font1;
+                font-size: 2.4vw;
+                font-weight: 300;
+                line-height: 3vw;
+                margin-bottom: 2vh;
+                letter-spacing: .15vw;
+                text-transform: uppercase;
+            }
+
+            .summary {
+                font-family: $font2;
+                font-size: 1.15vw;
+                line-height: 1.2vw;
+                position: relative;
+                margin-bottom: 3vh;
+                padding-bottom: 10%;
+
+                &:after {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: .4vw;
+                    content: '';
+                    background-color: black;
+                }
+            }
+
+            .year {
+                font-family: $font1;
+                font-size: 1.4vw;
+                font-weight: 300;
+                margin-bottom: 1vh;
+                letter-spacing: .1vw;
+                text-transform: uppercase;
+            }
+
+            .client {
+                @extend .year;
+            }
+
+            .tags {
+                @extend .year;
+            }
+        }
+
+        .american_university{
+            @extend .connecto;
+            display: none;
+            i{
+                font-size: 2vw;
+            }
+        }
+
+        .curiosity{
+            @extend .connecto;
+            display: none;
+            i{
+                font-size: 2vw;
+            }
+        }
+    }
+}
