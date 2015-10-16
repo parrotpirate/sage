@@ -1,53 +1,53 @@
-.project_display{
-	position: relative;
+.project_display {
+    position: relative;
 
-		.american_university{
-			display: none;
-			width: 100%;
-			height: 90vh;
-			background-color: $gray2;
-			font-size: 2vw;
-			font-family: $font1;
-			text-transform: uppercase;
-			letter-spacing: 1vw;
-			color: white;
-			text-align: center;
-			line-height: 7vh;
+    .american_university {
+        font-family: $font1;
+        font-size: 2vw;
+        line-height: 7vh;
+        display: none;
+        width: 100%;
+        height: 90vh;
+        text-align: center;
+        letter-spacing: 1vw;
+        text-transform: uppercase;
+        color: white;
+        background-color: $gray2;
 
-			.wrapper{
-				@include vertical-center;
-			}
-		}
+        .wrapper {
+            @include vertical-center;
+        }
+    }
 
-	.connecto{
+    .connecto {
+        .top {
+            width: 100%;
+            height: 90vh;
+            background-color: $gray2;
+        }
 
-		.top{
-			width: 100%;
-			height: 90vh;
-			background-color: $gray2;
-		}
+        .left {
+            float: left;
+            width: 50%;
+            height: 50vh;
+            background-color: #4b3f43;
+        }
 
-		.left{
-			width: 50%;
-			height: 50vh;
-			background-color: #4B3F43;
-			float: left;
-		}
+        .right {
+            float: right;
+            width: 50%;
+            height: 25vh;
+            background-color: $gray;
+        }
 
-		.right{
-			width: 50%;
-			height: 25vh;
-			background-color: $gray;
-			float: right;
-		}
+        .right:last-child {
+            background-color: $gray2;
+        }
+    }
 
-		.right:last-child{
-			background-color: $gray2;
-		}
-	}
+    .curiosity {
+        display: none;
 
-	.curiosity{
-		display: none;
-		@extend .american_university;
-	}
+        @extend .american_university;
+    }
 }
