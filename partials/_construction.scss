@@ -1,0 +1,21 @@
+#construction {
+    font-family: $font1;
+    width: 60%;
+    margin: 100px auto;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+    background-color: $red;
+
+    p {
+        font-size: 72px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+
+    i {
+        margin-top: 50px;
+
+        @extend p;
+    }
+}
