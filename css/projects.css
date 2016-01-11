@@ -421,6 +421,7 @@ header .container .search .search_block {
   font-size: 1.50vw;
   vertical-align: -10%;
   padding-right: 5%;
+  display: block;
 }
 
 .social_media .container p:last-child {
